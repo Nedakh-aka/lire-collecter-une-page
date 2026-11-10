@@ -8,7 +8,7 @@ L'objectif est de collecter les données des livres de la catégorie **Nonfictio
 
 Le notebook `collecte.ipynb` réalise les opérations suivantes :
 
-1. Extraction des titres, prix, notes, disponibilités et liens depuis les pages du catalogue.
+1. Extraction des titres, prix, notes et liens depuis les pages du catalogue.
 2. Parcours automatique des pages de la catégorie.
 3. Consultation des fiches détaillées pour récupérer l'UPC, le stock et la catégorie.
 4. Fusion des données à partir des URL des livres.
@@ -35,7 +35,8 @@ lire-collecter-une-page/
 │   └── collecte.ipynb
 ├── .env.example
 ├── .gitignore
-└── README.md
+├── README.md
+└── requirements.txt
 ```
 
 Le notebook contient également la fiche technique HTML réalisée lors de l'étude préalable du site.
@@ -52,7 +53,7 @@ Le fichier `data/Nonfiction.csv` contient 110 livres et les sept colonnes suivan
 | `note` | Note de 1 à 5 |
 | `stock` | Nombre d'exemplaires disponibles |
 | `upc` | Identifiant UPC du produit |
-| `url` | Lien relatif vers la fiche du livre |
+| `url` | URL absolue vers la fiche du livre |
 
 ## Résultats
 
